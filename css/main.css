@@ -1,0 +1,21 @@
+    /* add styling for header, body, and footer */
+    header {
+      background-color: lightblue;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: darkred;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
