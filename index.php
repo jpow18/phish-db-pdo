@@ -25,17 +25,6 @@ include_once("./config/Database.php");
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
     </form>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Show Info </th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- add rows to the table with JS -->
-      </tbody>
-    </table>
   </main>
 
   <footer>

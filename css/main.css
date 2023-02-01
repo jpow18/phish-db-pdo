@@ -1,21 +1,47 @@
-    /* add styling for header, body, and footer */
-    header {
-      background-color: lightblue;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
+header {
+  background-color: lightblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
 
-    body {
-      background-color: white;
-      color: black;
-      display: flex;
-      justify-content: center;
-    }
+body {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    footer {
-      background-color: darkred;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
+footer {
+  background-color: darkred;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+/* add styling for form and table */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 1em;
+}
