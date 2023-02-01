@@ -20,8 +20,8 @@ include_once("./config/Database.php");
   </header>
 
   <main>
-    <form>
-      <input type="text" placeholder="Enter show info">
+    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+      <input type="text" placeholder="2014-07-03" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD">
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
     </form>
