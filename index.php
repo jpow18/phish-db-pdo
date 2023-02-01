@@ -1,5 +1,9 @@
 <?php
 
+// $showDate = filter_input(INPUT_GET, "show");
+
+include("./config/createTable.php");
+
 include_once("./config/Database.php");
 
 ?>
