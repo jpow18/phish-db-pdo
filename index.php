@@ -2,7 +2,7 @@
 
 // $showDate = filter_input(INPUT_GET, "show");
 
-include("./config/createTable.php");
+//include("./config/createTable.php");
 
 include_once("./config/Database.php");
 
@@ -25,9 +25,9 @@ include_once("./config/Database.php");
 
   <main>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
-      <input type="text" placeholder="2014-07-03" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD">
+      <input type="text" name="show" placeholder="2014-07-03" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD">
       <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+      <button type="submit" name="delete">Delete</button>
     </form>
   </main>
 
