@@ -1,7 +1,11 @@
 <?php
 
-  // Check if show is present in the GET request
-  if(isset($_GET['show'])) {
+  // check if 'delete' is present in the GET request
+  if (isset($_GET['delete'])) {
+    $deleteShow = $_GET['delete'];
+
+
+  } else if (isset($_GET['show'])) { // Check if show is present in the GET request
     // Get the 'show' date from the GET request
     $showDate = $_GET['show'];
 
@@ -52,6 +56,8 @@
           $city = $data["data"][0]['city'];
           $venue = $data["data"][0]['venue'];
       }
+    } else if(isset($showDate)) {
+      echo "No show on that date.";
     }
   }
 
