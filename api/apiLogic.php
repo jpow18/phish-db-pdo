@@ -4,6 +4,8 @@
   if (isset($_GET['delete'])) {
     $deleteShow = $_GET['delete'];
 
+    // Sanitize the show date to remove any special characters
+    $deleteShow = filter_var($deleteShow, FILTER_SANITIZE_SPECIAL_CHARS);
 
   } else if (isset($_GET['show'])) { // Check if show is present in the GET request
     // Get the 'show' date from the GET request

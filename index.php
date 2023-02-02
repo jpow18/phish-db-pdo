@@ -27,7 +27,8 @@ include_once("./config/Database.php");
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
       <input type="text" name="show" placeholder="2014-07-03" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD">
       <button type="submit">Submit</button>
-      <button type="submit" name="delete">Delete</button>
+      <input type="text" name="delete" placeholder="2014-07-03" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD">
+      <button type="submit">Delete</button>
     </form>
   </main>
 
